@@ -77,7 +77,7 @@ namespace Phunk.Core
                             string versionString = match.Groups[1].Value.Trim();
                             versionstr = versionString;
 
-                            if (Version.TryParse(versionString, out Version version) && version.Major == 1 && version.Minor >= 8)
+                            if (Version.TryParse(versionString, out Version version) && version.Major >= 18)
                             {
                                 return true;
                             }
