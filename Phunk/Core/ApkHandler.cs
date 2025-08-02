@@ -23,7 +23,7 @@ namespace Phunk.Core
                     FileName = !GlobalViewModel.IsCustomJavaPath && GlobalViewModel.JavaPathFolderSettingsTxt.Length == 0
                         ? "java"
                         : Path.Combine(GlobalViewModel.JavaPathFolderSettingsTxt + "/bin/java.exe"),
-                    Arguments = $"-jar \"{apktoolPath}\" -f d \"{apkPath}\" -o \"{outputApkPath}\"" + " " + additionalParams,
+                    Arguments = $"-jar \"{apktoolPath}\" d -f \"{apkPath}\" -o \"{outputApkPath}\"" + " " + additionalParams,
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
                     UseShellExecute = false,
@@ -71,7 +71,7 @@ namespace Phunk.Core
                     FileName = !GlobalViewModel.IsCustomJavaPath && GlobalViewModel.JavaPathFolderSettingsTxt.Length == 0
                         ? "java"
                         : Path.Combine(GlobalViewModel.JavaPathFolderSettingsTxt + "/bin/java.exe"),
-                    Arguments = $"-jar \"{apktoolPath}\" -f b \"{directoryPath}\" -o \"{outputApkPath}\"",
+                    Arguments = $"-jar \"{apktoolPath}\" b -f \"{directoryPath}\" -o \"{outputApkPath}\"",
                     RedirectStandardOutput = true,
                     RedirectStandardError = true,
                     UseShellExecute = false,

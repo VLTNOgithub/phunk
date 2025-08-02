@@ -36,7 +36,7 @@
 
         <StackPanel Margin="5" Grid.Row="1">
             <TextBlock Text="Custom Package Name" Margin="0 0 2 2"/>
-            <TextBox Text="{Binding GlobalViewModel.CustomPackageNameSettingsTxt, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding GlobalViewModel.IsProcessStarting, Converter={StaticResource BooleanNegationConverter}}" adonisExtensions:CursorSpotlightExtension.BackgroundBrush="Transparent" Background="#25262e" Foreground="White" adonisExtensions:WatermarkExtension.IsWatermarkVisible="True" adonisExtensions:WatermarkExtension.Watermark="demo (default)"/>
+            <TextBox Text="{Binding GlobalViewModel.CustomPackageNameSettingsTxt, UpdateSourceTrigger=PropertyChanged}" IsEnabled="{Binding GlobalViewModel.IsProcessStarting, Converter={StaticResource BooleanNegationConverter}}" adonisExtensions:CursorSpotlightExtension.BackgroundBrush="Transparent" Background="#25262e" Foreground="White" adonisExtensions:WatermarkExtension.IsWatermarkVisible="True" adonisExtensions:WatermarkExtension.Watermark="phunk (default)"/>
         </StackPanel>
 
         <StackPanel Margin="5" Grid.Row="2">
