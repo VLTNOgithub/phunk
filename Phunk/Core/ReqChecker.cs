@@ -77,8 +77,9 @@ namespace Phunk.Core
                             string versionString = match.Groups[1].Value.Trim();
                             versionstr = versionString;
 
-                            if (Version.TryParse(versionString, out Version version) && version.Major >= 18)
+                            if (Version.TryParse(versionString, out Version version) && ( version.Major >= 18 || version.ToString() == "1.8" ) )
                             {
+                                GlobalViewModel.PhunkLogs += "\n[Phunk] Java version is up to date: " + version;
                                 return true;
                             }
                         }
